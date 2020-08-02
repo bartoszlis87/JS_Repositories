@@ -12,7 +12,8 @@ node_modules
 .idea
 *.xml
 *.iml
-
+.xml
+.iml
 
 
 # User-specific stuff

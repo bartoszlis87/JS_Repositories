@@ -13,7 +13,7 @@ console.log("Pobrana wartość: ", alfa[1]);
 
 //sumowanie elementow w tablicy:
 const sum = [...alfa, ...beta];
-console.log('Suma elementów w tablicy: ',sum);
+console.log('Suma elementów w tablicy: ', sum);
 
 //sprawdzanie czy obie tablice sa takie same(przez referencje)
 if(alfa === beta){
@@ -103,4 +103,20 @@ let deleteElements = vegetables.splice(1, 2);
 console.log('Tablica po usunięciu elementu:', deleteElements);
 console.log('Tablica warzyw: ', vegetables);// ["Rzepa", "Rzodkiew"]
 console.log('*----------*');
+console.log('*----------Pętle-----------*');
+//Pętle
 
+let alfaSum = [12, 22, 44];
+let sum1 = 0;
+try {
+    for (let i = 0; i < alfaSum.length; i++) {
+        console.log(i, alfaSum[i]);
+
+        sum1 = sum1 + alfaSum[i];
+    }
+}catch (err){
+    console.log(err);
+}
+console.log('Tablica: ',alfaSum, 'Suma tablicy: ', sum1);
+console.log('*----------*');
+//metoda forEach()

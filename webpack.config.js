@@ -1,5 +1,5 @@
 const path = require("path");
-const entryPath = "objects";
+const entryPath = "object";
 const entryFile = "app.js";
 const autoprefixer = require('autoprefixer');
 const Html = require('html-webpack-plugin');

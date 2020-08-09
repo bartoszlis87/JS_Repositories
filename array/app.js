@@ -168,9 +168,20 @@ const alfaMapArr = alfaMap.map((item) => {
 });
 console.log(alfaMapArr);
 console.log('*----------Tablica 2 wymiarowa*');
-// const cart = [
-//         ['skarpetki', 3, 4.90]
-//         ['gacie', 8, 20.00]
-//         ['top', 4, 19.90]
-// ];
-// console.log(cart[1][2]);
+const cart = [
+        ['skarpetki', 3, 4.90],
+        ['gacie', 4, 3.90],
+        ['top', 2, 5.90]
+];
+
+const costProduct = cart.map((product) => {
+    return (product[1] * product[2]).toFixed(2);
+})
+console.log(costProduct)
+
+console.log('*----------Filter*');
+const newProduct = cart.filter((product) => {
+    return product[0] !== 'gacie';
+});
+console.log('Tablica przed filtrowaniem: ', cart);
+console.log('Tablica po filtrowaniu: ', newProduct);

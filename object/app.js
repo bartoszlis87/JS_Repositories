@@ -53,3 +53,17 @@ console.log('*-Pętla for-*');
 for (const key in product) {
     console.log(key, product[key])
 }
+console.log('*-Porównanie obiektów-*');
+console.log(product);
+const newProduct = { ...product };
+newProduct.name = 'Podstawy JavaScript';
+console.log(newProduct);
+console.log(product);
+
+//tworzenie głębokiej kopii obiektów(nie idealne)
+const nextNewProduct = JSON.parse(JSON.stringify(product));
+nextNewProduct.price.value = 99;
+nextNewProduct.name = 'Podstawy REACT';
+console.log(nextNewProduct);
+console.log(product);
+

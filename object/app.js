@@ -66,4 +66,10 @@ nextNewProduct.price.value = 99;
 nextNewProduct.name = 'Podstawy REACT';
 console.log(nextNewProduct);
 console.log(product);
+console.log('*----------*');
 
+//pobieranie wszystkich kluczy z danego obiektu
+const keys = Object.keys(product);
+const values = Object.values(product);
+console.log(keys, values);
+console.log('*----------*');
